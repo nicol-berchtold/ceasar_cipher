@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <script src="main.js" defer></script>
 
     <title>Caesar Cipher</title>
 </head>
@@ -14,18 +14,18 @@
         <h1 class="ueberschrift">Caesar Encryption</h1>
         <p class="text">Verschlüsselung um die Angegebenen Buchstaben</p>
         <div class="box1">
-            <input class="eingabe" type="text">
-            <input class="nummer" type="number">
+            <input class="eingabe" placeholder="TEXT" type="text" id="eingabeText">
+            <input class="nummer" placeholder="0" type="number" id="nummerNumber">
         </div>
         <div class="box2">
-            <button class="encrypt">encrypt/decrypt</button>
-            <button class="reset">Reset</button>
+            <button class="encrypt" id="encrypt">encrypt</button>
+            <button class="reset" id="reset">Reset</button>
         </div>
  
     </div>
     <footer>
-        <div class="ausgabe">
-            <span>###</span>
+        <div >
+          <span class="ausgabe" id="ausgabe">###</span> 
         </div>
     </footer>
 </body>
